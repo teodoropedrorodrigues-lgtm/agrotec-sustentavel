@@ -5,16 +5,17 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
-    background:#f5f5f5;
+    font-family:Arial, sans-serif;
+    background:#f4f7f4;
     color:#333;
+    line-height:1.6;
 }
 
 header{
-    background:#2e7d32;
+    background:linear-gradient(135deg,#2e7d32,#43a047);
     color:white;
     text-align:center;
-    padding:30px;
+    padding:30px 20px;
 }
 
 .logo{
@@ -22,41 +23,97 @@ header{
     margin-bottom:15px;
 }
 
+header h1{
+    margin-bottom:10px;
+}
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
 .banner img{
     width:100%;
     display:block;
 }
 
-section{
-    padding:30px;
+.secao{
+    padding:50px 20px;
     text-align:center;
 }
 
-section img{
-    max-width:100%;
-    width:600px;
-    border-radius:10px;
-    margin-top:15px;
+.secao h2{
+    color:#2e7d32;
+    margin-bottom:20px;
 }
 
-h2{
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:320px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:15px 0;
+    color:#2e7d32;
+}
+
+.simulador{
+    background:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.simulador h2{
     color:#2e7d32;
     margin-bottom:15px;
 }
 
-.simulador input{
-    padding:10px;
-    width:200px;
+input{
+    padding:12px;
+    width:250px;
+    border:1px solid #ccc;
+    border-radius:8px;
     margin:10px;
 }
 
 button{
-    padding:10px 20px;
+    padding:12px 25px;
     border:none;
     background:#2e7d32;
     color:white;
+    border-radius:8px;
     cursor:pointer;
-    border-radius:5px;
+    font-size:16px;
 }
 
 button:hover{
@@ -65,29 +122,30 @@ button:hover{
 
 #resultado{
     margin-top:20px;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
+    color:#2e7d32;
 }
 
 footer{
     background:#2e7d32;
     color:white;
     text-align:center;
-    padding:15px;
+    padding:20px;
 }
 
-@media (max-width:768px){
+@media(max-width:768px){
 
-    header{
-        padding:20px;
+    .cards{
+        flex-direction:column;
+        align-items:center;
     }
 
-    h1{
-        font-size:28px;
+    .card{
+        width:90%;
     }
 
-    section{
-        padding:20px;
+    input{
+        width:90%;
     }
-
 }
