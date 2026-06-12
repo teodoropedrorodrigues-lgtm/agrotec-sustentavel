@@ -1,22 +1,28 @@
 function calcular() {
-    const campo = document.getElementById("animais");
-    const resultado = document.getElementById("resultado");
 
-    const animais = parseInt(campo.value);
+    const quantidade =
+        parseInt(
+            document.getElementById("animais").value
+        );
 
-    if (!animais || animais < 1) {
+    const resultado =
+        document.getElementById("resultado");
+
+    if (!quantidade || quantidade < 1) {
+
         resultado.innerHTML =
-            "<span style='color:red'>Digite uma quantidade válida.</span>";
+        "Digite uma quantidade válida.";
+
+        resultado.style.color = "red";
+
         return;
     }
 
-    const economia = animais * 15;
+    const economia = quantidade * 15;
 
-    resultado.innerHTML = `
-        <p>
-            Para <strong>${animais}</strong> animais,
-            a economia estimada é de
-            <strong>R$ ${economia.toFixed(2)}</strong> por mês.
-        </p>
-    `;
+    resultado.style.color = "#2e7d32";
+
+    resultado.innerHTML =
+        `Economia estimada: R$ ${economia.toFixed(2)}
+        por mês para ${quantidade} animais.`;
 }
