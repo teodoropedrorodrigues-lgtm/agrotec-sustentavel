@@ -1,71 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroTec Sustentável</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AgroTec Sustentável | Agrinho 2026</title>
+
+<meta name="description"
+content="Projeto Agrinho 2026 - Agro forte, futuro sustentável.">
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <img src="img/logo-agrotec.png" alt="Logo AgroTec" class="logo">
+    <div class="container">
+        <img src="img/logo-agrotec.png" alt="Logo AgroTec" class="logo">
 
-    <h1>AgroTec Sustentável</h1>
-    <p>Projeto Agrinho 2026 - Agro forte, futuro sustentável.</p>
+        <h1>AgroTec Sustentável</h1>
+
+        <p>
+            Tecnologia, inovação e sustentabilidade para o campo.
+        </p>
+
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#projeto">Projeto</a>
+            <a href="#simulador">Simulador</a>
+        </nav>
+    </div>
 </header>
 
 <section class="banner">
-    <img src="img/banner.png" alt="Banner do Projeto">
+    <img src="img/banner.png" alt="Banner AgroTec">
 </section>
 
-<section class="sobre">
+<section id="sobre" class="secao">
     <h2>Sobre o Projeto</h2>
 
     <p>
-        O AgroTec Sustentável apresenta soluções tecnológicas para tornar
-        a produção rural mais eficiente e sustentável.
-    </p>
-
-    <img src="img/maquete-geral.png" alt="Maquete Geral">
-</section>
-
-<section class="comedouro">
-    <h2>Comedouro Inteligente</h2>
-
-    <img src="img/comedouro.png" alt="Comedouro Inteligente">
-
-    <p>
-        O sistema automatiza a alimentação dos animais,
-        reduz desperdícios e melhora o manejo da propriedade.
+        O AgroTec Sustentável foi desenvolvido para demonstrar
+        como a tecnologia pode contribuir para uma produção rural
+        mais eficiente, econômica e sustentável.
     </p>
 </section>
 
-<section class="simulador">
+<section id="projeto" class="secao cards">
+
+    <div class="card">
+        <img src="img/maquete-geral.png" alt="Maquete">
+
+        <h3>Maquete Inteligente</h3>
+
+        <p>
+            Representa soluções sustentáveis aplicadas
+            ao ambiente rural.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="img/comedouro.png" alt="Comedouro">
+
+        <h3>Comedouro Inteligente</h3>
+
+        <p>
+            Automatiza a alimentação dos animais,
+            reduzindo desperdícios.
+        </p>
+    </div>
+
+</section>
+
+<section id="simulador" class="simulador">
+
     <h2>Simulador de Economia</h2>
 
-    <label>Quantidade de animais:</label>
-    <input type="number" id="animais" min="1">
+    <p>
+        Informe a quantidade de animais para estimar
+        a economia mensal.
+    </p>
 
-    <button onclick="calcular()">Calcular Economia</button>
+    <input
+        type="number"
+        id="animais"
+        min="1"
+        placeholder="Quantidade de animais">
+
+    <button onclick="calcular()">
+        Calcular
+    </button>
 
     <div id="resultado"></div>
+
 </section>
 
 <footer>
-    <p>Projeto Agrinho 2026 - AgroTec Sustentável</p>
+    <p>
+        Projeto Agrinho 2026 • AgroTec Sustentável
+    </p>
 </footer>
 
 <script src="script.js"></script>
 
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto Agrinho 2026 - AgroTec Sustentável">
-    <title>AgroTec Sustentável</title>
-    <link rel="stylesheet" href="style.css">
-</head>
